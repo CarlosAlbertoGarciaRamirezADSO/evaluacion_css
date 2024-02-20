@@ -6,18 +6,15 @@
   --letra_cabin:"Cabin", sans-serif;;
   --letra_cursiva:"Pacifico";
   --letra:"Rubik maps";
+  --color_yellow:yellow;
 }
 
 header{
-  background-color: yellow;
-  /* background-image: url(imagenes/fondo.png);
-  background-repeat: no-repeat;
-  background-position: 1420px; */
+  background-color: var(--color_yellow);
   padding: 0;
 }
 
 .content__imgenes{
-  /* background-color: yellow; */
   height: 100%;
   max-width: 90%;
   margin: 0 auto;
@@ -29,7 +26,6 @@ header{
 .logo__princ img{
   width: 150px;
   height: 100px;
-  /* background-color: blue; */
 }
 .logo__princ {
   display: flex;
@@ -41,7 +37,6 @@ header{
 .nav__bar{
   display: flex;
   justify-content: end;
-  /* background-color: rgb(9, 90, 100); */
   max-width: 90%;
   margin: 0 auto;
   
@@ -49,37 +44,29 @@ header{
 .nav__bar ul{
   display: flex;
   justify-content: space-around;
-  /* background-color: aqua; */
   width: 50%; 
   list-style: none;
   font-family: var(--letra_cabin);
   
 }
 .section1__ini{
-  /* background-color: blue; */
   padding: 10px;
 }
 .section1__cont{
-  /* background-color: rgb(90, 90, 67); */
   display: flex;
-  /* flex-direction: column; */
-  /* height: 500px; */
   margin: 30px;
 }
 .contenedor{
   display: flex;
   flex-direction: column;
-  /* background-color: antiquewhite; */
   margin: 0 auto;
   padding: 50px;
 }
 
 .plato_img{
-  /* background-color: aqua; */
   margin: 0 auto;
 }
 .section1__cont__text1{
-  /* background-color: red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,7 +75,6 @@ header{
   margin: 20px;
 }
 .section1__cont__text2{
-  /* background-color: rgb(255, 0, 221);  */
   width: 20%;
   margin: 20px;
 }
@@ -116,7 +102,6 @@ header{
   left: 170px;
 }
 .section1__cont__text2{
-  /* background-color: red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -125,7 +110,7 @@ header{
 }
 .section1__cont__button{
   color: black;
-  background-color: yellow;
+  background-color: var(--color_yellow);
   border: 1px solid black ;
   display: flex;
   justify-content: center;
@@ -156,14 +141,10 @@ header{
 
 /* seccion 2 */
 .section2__ini{
-  /* background-color: aqua; */
   padding: 10px;
 }
-.section2__cont{
-  /* background-color: antiquewhite; */
-}
+
 .section2__cont1__text{
-  /* background-color: blueviolet; */
   width: 50%;
   margin: 0 auto;
   display: flex;
@@ -186,35 +167,29 @@ header{
   grid-template-columns: repeat(3,1fr);
   max-width: 60%;
   margin: 0 auto;
-  /* background-color: brown; */
 
 }
 .card1{
-  /* background-color: rgb(148, 179, 127); */
   display: flex ;
   flex-direction: column;
   margin: 0 auto;
 }
 .card1 img{
-  /* background-color: rgb(102, 255, 0); */
   display: flex ;
   flex-direction: column;
   margin: 0 auto;
 }
 .card2 img{
-  /* background-color: rgb(102, 255, 0); */
   display: flex ;
   flex-direction: column;
   margin: 0 auto;
 }
 .card3 img{
-  /* background-color: rgb(102, 255, 0); */
   display: flex ;
   flex-direction: column;
   margin: 0 auto;
 }
 .card_content{
-  /* background-color: rgb(108, 163, 156); */
   display: flex ;
   flex-direction: column;
   align-items: center;
@@ -222,7 +197,7 @@ header{
   margin-top: 20px;
 }
 .card1__button{
-  background-color: yellow;
+  background-color: var(--color_yellow);
   height: 30px;
   width: 100px;
   margin-top: 20px; 
@@ -253,14 +228,10 @@ header{
 }
 /* seccion 3 */
 .section3__ini{
-  /* background-color: aqua; */
   padding: 10px;
 }
-.section3__cont{
-  /* background-color: antiquewhite; */
-}
 .section3_text{
-  /* background-color: blueviolet; */
+
   width: 50%;
   margin: 0 auto;
   display: flex;
@@ -279,66 +250,114 @@ header{
 }
 
 .section3__imagenes{
-  display: grid;
-  grid-template-columns: 1fr 500px 1fr;
-  grid-template-rows: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin: 0 auto;
-
+  height: 500px;
 }
-.imagen_carrusel2{
+
+.circulo{
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  height: 100px;
   margin: 0 auto;
-  position: absolute;
-  top: 1340px;
-  left: 550px;
-  width: 700px;
-  z-index: 1;
 }
-.imagen_carrusel1{
-
-  width: 600px;
-  height: 400px;
+.circulo1{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
-.imagen_carrusel3{
-
-  width: 600px;
-  height: 400px;
-  grid-column: 3;
+.circulo2{
+  background-color: rgb(224, 224, 224);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
-
-
+.circulo3{
+  background-color: rgb(224, 224, 224);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.circulo1{
+  background-color: var(--color_yellow);
+}
 
 .section4__ini{
-  /* background-color: aqua; */
   padding: 20px;
 }
 .section4__cont{
-  background-color: antiquewhite;
   padding: 20px;
 }
 .section4__popular{
   display: grid;
-  grid-template-columns: 700px 1fr;
-  grid-template-rows:2fr ;
-  background-color: aqua;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows:1fr 1fr;
   padding: 20px;
+  gap: 20px;
+}
+.section4__card2{
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .section4__card1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1;
   grid-row: 1/3;
-  width: 100%;
-  /* background-image: url(imagenes/pasta4.png); */
-  background-color: brown;
-  background-image: url(imagenes/pasta4.png);
-  background-image: cover;
-}
-.section4__card1{
-  width: 600px;
-  height: 400px;
+  margin: 0 auto;
 }
 
+.section4__card3{
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario{
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: yellow;   */
+  max-width: 40%;
+  margin: 0 auto;
+  
+}
+.section4__reservar_text h2{
+  font-size: 25px;
+  text-align: center;
+}
+.section4__reservar_text h1{
+  font-size: 60px;
+  text-align: center;
+  font-family: var(--letra);
+}
+.formulario input{
+  width: 300px;
+  height: 50px;
+  margin: 10px;
+  padding: 10px;
+  /* border: none; */
+  border-radius: 3px;
+}
 
 
-
-
-
-
+.button__formulario{
+  width: 320px;
+  height: 70px;
+  margin: 10px;
+  border: 1px solid rgb(198, 191, 4);
+  background-color: var(--color_yellow);
+  color: black;
+  font-size: 20px;
+  font-family: var(--letra);
+}
 
